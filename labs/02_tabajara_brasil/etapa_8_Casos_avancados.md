@@ -65,11 +65,13 @@ Recursos que a metric view habilita:
 
 **Objetivo:** experimentar três recursos avançados sobre o painel já criado. (A metric view requer DBR 17.3+/serverless.)
 
-**Parte 1 — Criar uma metric view governada (`mv_vendas`).**
+**Parte 1 — Criar uma metric view governada (`mv_vendas_metric_view`).**
+
+Importante: Esse passo **somente** pode ser executado por um administrador do schema onde o metric view será gravado.
 
 1. No workspace, vá em **New → Query** (ou abra o SQL Editor). Vamos criar a metric view em **YAML**, direto por SQL:
    ```sql
-   CREATE VIEW dbacademy.workshop_aibi.mv_vendas
+   CREATE VIEW dbacademy.workshop_aibi.mv_vendas_metric_view
    WITH METRICS
    LANGUAGE YAML
    AS $$
@@ -98,7 +100,7 @@ Recursos que a metric view habilita:
 2. **Consulte** a metric view (repare no `MEASURE()`):
    ```sql
    SELECT category, MEASURE(receita_total) AS receita, MEASURE(margem) AS margem
-   FROM dbacademy.workshop_aibi.mv_vendas
+   FROM dbacademy.workshop_aibi.mv_vendas_metric_view
    GROUP BY category
    ORDER BY receita DESC
    ```
