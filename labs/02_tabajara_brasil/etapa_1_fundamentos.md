@@ -76,6 +76,9 @@ Lembre do nosso modelo estrela: `fact_sales` guarda **as vendas** (o que acontec
 
 **6. Crie o primeiro gráfico.** Vá para a aba **Canvas** e adicione uma visualização do tipo **Bar**: eixo X = `category`, eixo Y = `sales_amount` com agregação **SUM**. Pronto — "Receita por categoria" em menos de 5 minutos!
 
+![Explorando os dados no Unity Catalog](../../imagens/lab02_img06.jpg)
+
+
 > **Analogia:** o dataset é o ingrediente já lavado e cortado; o gráfico é o primeiro prato montado.
 
 ### 6.4 Sugestão (opcional)
@@ -83,4 +86,6 @@ Lembre do nosso modelo estrela: `fact_sales` guarda **as vendas** (o que acontec
 Explore outros tipos de gráficos como gráfico de pizza, tabelas. Crie também filtros para entender a lógica de funcionamento. 
 
 Use a sugestão abaixo mas fique livre para explorar outras formas de visualização.
-![Explorando os dados no Unity Catalog](../../imagens/lab02_img05.jpg)
+![Sugestao de dashboard](../../imagens/lab02_img05.jpg)
+
+[FIM]

@@ -1,8 +1,6 @@
 # O caso de uso: dados de varejo (retail)
 
-Estes são os dados da **TabajaraBrasil** (o cenário da seção anterior): um modelo estrela clássico de varejo. Todas as tabelas ficam em `<seu_catalogo>.workshop_aibi_tabajarabrasil`.
-
-**[SUBSTITUA AQUI]** troque `<seu_catalogo>` pelo catálogo onde você tem permissão de escrita (ex.: `main`, `workspace`, ou seu catálogo pessoal). O schema `workshop_aibi_tabajarabrasil` é criado pelo notebook.
+Estes são os dados da **TabajaraBrasil** (o cenário da seção anterior): um modelo estrela clássico de varejo. Todas as tabelas ficam em **dbacademy.workshop_aibi**.
 
 As tabelas (as únicas que existem neste conjunto):
 
@@ -123,3 +121,5 @@ Considere a tabela dbacademy.workshop_aibi.fact_sales como minha tabela principa
 
 Liste a quantidade de vendas por loja.
 ```
+
+[FIM]

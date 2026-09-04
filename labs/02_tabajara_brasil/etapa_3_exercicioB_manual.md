@@ -55,7 +55,7 @@ Sempre faça a previsão sobre uma **série temporal simples** (uma coluna de da
 SELECT
   date_trunc('MONTH', f.sale_date) AS mes,
   SUM(f.sales_amount)              AS total_sales
-FROM `<seu_catalogo>`.workshop_aibi_tabajarabrasil.fact_sales f
+FROM dbacademy.workshop_aibi.fact_sales f
 WHERE f.sale_date < date_trunc('MONTH', current_date())   -- remove o mes incompleto
 GROUP BY date_trunc('MONTH', f.sale_date)
 ORDER BY mes
@@ -65,9 +65,11 @@ Há **duas formas** de gerar a previsão. Escolha uma.
 
 ##### Opção A — Pelo botão do gráfico (Clone and forecast)
 
-**1.** Faça um gráfico **Line** sobre `vendas_forecast`: eixo X = `mes`, eixo Y = `total_sales`.
+**1.** Selecione o gráfico de linhas criado no item 8.2
 
-**2.** Clique no ícone **✨ (Clone and forecast)** no canto do widget. A Databricks **gera automaticamente** um novo dataset com a query de `AI_FORECAST` e um gráfico do tipo **Line (forecast)**, já com as séries **Prediction / Prediction Upper / Prediction Lower** mapeadas (`total_sales_forecast`, `total_sales_upper`, `total_sales_lower`).
+**2.** Clique na opção do gráfico (a última) **✨ Forecast** no canto do painel de configuração. A Databricks **gera automaticamente** um novo dataset com a query de `AI_FORECAST` e um gráfico do tipo **Line (forecast)**, já com as séries **Prediction / Prediction Upper / Prediction Lower** mapeadas (`total_sales_forecast`, `total_sales_upper`, `total_sales_lower`).
+
+![Explorando os dados no Unity Catalog](../../imagens/lab02_img07.jpg)
 
 **3. Como definir o horizonte:** o "Clone and forecast" **não** abre um campo "meses" — ele grava o horizonte **dentro da query gerada**, no argumento `horizon =>` da função `AI_FORECAST`. Por padrão projeta **metade do período histórico** (o trecho `FLOOR(DATEDIFF(...) * 0.5)`).
 
@@ -101,7 +103,7 @@ WITH serie AS (
   SELECT
     date_trunc('MONTH', f.sale_date) AS mes,
     SUM(f.sales_amount)              AS total_sales
-  FROM `<seu_catalogo>`.workshop_aibi_tabajarabrasil.fact_sales f
+  FROM dbacademy.workshop_aibi.fact_sales f
   WHERE f.sale_date < date_trunc('MONTH', current_date())
   GROUP BY date_trunc('MONTH', f.sale_date)
 )
@@ -135,7 +137,7 @@ WITH serie AS (
   SELECT
     date_trunc('MONTH', f.sale_date) AS mes,
     SUM(f.sales_amount)              AS total_sales
-  FROM `<seu_catalogo>`.workshop_aibi_tabajarabrasil.fact_sales f
+  FROM dbacademy.workshop_aibi.fact_sales f
   WHERE f.sale_date < date_trunc('MONTH', current_date())
   GROUP BY date_trunc('MONTH', f.sale_date)
 ),
@@ -184,16 +186,5 @@ ORDER BY mes
 > - Filtrar o mês incompleto (o `WHERE` acima) evita o "penhasco" no fim da linha.
 > - `AI_FORECAST` exige **SQL Warehouse Pro ou Serverless** (é Public Preview).
 
-### 8.3 Tabela — Top produtos com formatação condicional
 
-**1.** Adicione uma visualização (8.0), em **Visualization** escolha **Table** e dataset **`vendas_detalhe`**.
-
-**2.** **Colunas:** adicione `product_name`, `category`, `sales_amount` (agregação **SUM**) e `quantity` (agregação **SUM**). Dica: por padrão a tabela pode trazer muitas colunas — use o ícone de **olho** em cada coluna para mostrar/ocultar e deixe só essas quatro.
-
-**3.** **Ordenar e limitar:** clique no cabeçalho de `sales_amount` para ordenar em ordem **decrescente** (maior receita no topo) e, nas opções da tabela, defina o **limite de linhas = 10**.
-
-**4.** **Formatação condicional:** nas opções da coluna `sales_amount`, ative a **formatação condicional** (ex.: escala de cor verde para os valores mais altos) e formate a coluna como **moeda**.
-
-**5.** Marque **Title** = "Top 10 produtos por receita".
-
-_Capítulo 8 de 14. Notebook-guia do workshop **AI/BI Dashboards**. Dados: `retail_synthetic_data_PT.py` (Etapa 0). Ajuste `<seu_catalogo>`/`<tu_catalogo>` onde indicado._
+[FIM]

@@ -39,3 +39,4 @@ Nomeie o dataset principal como 'vendas_overview' e adicione um texto explicativ
 **[SUBSTITUA AQUI]** se usar dados próprios, cite as suas tabelas e colunas no prompt.
 
 
+[FIM]
