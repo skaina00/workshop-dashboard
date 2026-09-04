@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Ambientes
+.venv/
+venv/
+
+# Pastas do projeto (mantém rastreada apenas a pasta preparacao/)
+/Material_Didatico_PT_Notebooks/
+/Notebooks_Dados/
+/PDFs/
