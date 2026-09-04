@@ -14,7 +14,7 @@ Estes tópicos vão além do workshop ao vivo. Eles respondem à pergunta: *"O p
 ```sql
 -- Consumindo a metric view
 SELECT category, MEASURE(receita_total) AS receita
-FROM dbacademy.workshop_aibi.mv_vendas
+FROM dbacademy.workshop_aibi.mv_vendas_metric_view
 GROUP BY category;
 ```
 
