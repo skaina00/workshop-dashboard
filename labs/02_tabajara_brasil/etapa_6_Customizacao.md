@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # Etapa 6 — Customização (temas, textos, mapas)
 
 **Pré-requisitos e permissões:** iguais à Etapa 1; temas de workspace exigem admin (veja Etapa 8).

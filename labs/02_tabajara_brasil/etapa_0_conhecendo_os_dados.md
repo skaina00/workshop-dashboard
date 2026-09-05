@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # O caso de uso: dados de varejo (retail)
 
 Estes são os dados da **TabajaraBrasil** (o cenário da seção anterior): um modelo estrela clássico de varejo. Todas as tabelas ficam em **dbacademy.workshop_aibi**.

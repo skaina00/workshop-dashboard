@@ -1,4 +1,6 @@
-# Workshop Hands-On AI/BI Dashboards — Material Didático (PT-BR)
+<img src="../../imagens/header_01.png">
+
+# Workshop Hands-On AI/BI Dashboards — Laboratorio 2
 
 Bem-vindo(a) ao material completo do workshop **AI/BI Dashboards na Prática**. Este guia leva você do zero — dados crus — até um dashboard publicado, compartilhado e governado na Databricks, cobrindo desde o básico até casos avançados.
 

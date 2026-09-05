@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # Etapa 3 — Exercício B: criação manual de visualizações
 
 **Pré-requisitos e permissões:** iguais à Etapa 1. Use o dataset `vendas_detalhe`.
