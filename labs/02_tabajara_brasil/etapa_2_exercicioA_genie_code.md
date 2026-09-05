@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # Etapa 2 — Exercício A: criação agêntica com IA (Genie Code)
 
 **Pré-requisitos e permissões:** Genie Code habilitado no workspace; as mesmas permissões da Etapa 1. Para o Genie encontrar as tabelas, você precisa de `SELECT` nelas.

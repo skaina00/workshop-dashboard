@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # Workshop Hands-On AI/BI Dashboards — Laboratorio 1
 
 Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Análise Exploratória e Painéis.

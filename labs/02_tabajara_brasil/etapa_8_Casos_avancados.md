@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # Etapa 8 — Casos avançados (bônus completo)
 
 Estes tópicos vão além do workshop ao vivo. Eles respondem à pergunta: *"O painel ficou ótimo — como levo isso a nível de **empresa**: confiável, reutilizável, versionado e monitorado?"*. Aqui saímos do "dashboard bonito no meu workspace" para "plataforma de BI governada".

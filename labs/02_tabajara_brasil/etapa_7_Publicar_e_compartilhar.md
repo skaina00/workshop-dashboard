@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # Etapa 7 — Publicar e compartilhar (permissões, subscriptions, Genie Space, embedding)
 
 **Pré-requisitos e permissões:** CAN MANAGE para publicar e definir permissões; para agendar/entregar, o admin precisa habilitar e-mail/Slack/Teams no workspace.

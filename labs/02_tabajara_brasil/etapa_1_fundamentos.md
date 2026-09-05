@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # Etapa 1 — Fundamentos: seu primeiro dashboard e dataset
 
 **Pré-requisitos e permissões:** workspace + Databricks SQL; CAN USE em um SQL Warehouse; SELECT nas tabelas de retail.

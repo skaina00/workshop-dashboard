@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # Etapa 5 — Interatividade (filtros, parâmetros, variáveis, cross-filter)
 
 **Pré-requisitos e permissões:** iguais à Etapa 1.

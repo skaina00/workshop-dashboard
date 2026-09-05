@@ -1,3 +1,5 @@
+<img src="../../imagens/header_01.png">
+
 # Etapa 4 — Modelagem de dados (cálculos, LOD, metric views locais, relacionamentos)
 
 **Pré-requisitos e permissões:** iguais à Etapa 1. Alguns recursos avançados (metric views no Unity Catalog) aparecem na Etapa 8.
