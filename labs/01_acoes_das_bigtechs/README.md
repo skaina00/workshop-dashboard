@@ -19,7 +19,7 @@ Na tela do Dashboard, clique na ABA **"Data"** para adicionar uma fonte de dados
 
 <img src="../../imagens/lab01_img02.png" style="height: 300px;"></br>
 
-1 - Escolha a opção *"Create from SQL"*
+1 - Escolha a opção *"Add SQL Dataset"*
 
 2 - Copie a consulta abaixo e cole no editor (não se esqueça de incluir seu banco de dados)
 ```sql
@@ -81,35 +81,13 @@ Clique no botão "**Publish**" para publicar o Painel.
 </br></br></br>
 
 
-## Exercício 04 - Criando um NOVO contexto de dados com Genie Code
-
-Vamos criar agora um novo contexto de dados.</br>
-Para isso, selecione novamente o ícone da Genie Code, </br>
-No campo de diálogo, copie o texto abaixo, cole(ajuste para o seu banco de dados) e execute a instrução</br>
-Clique em *"Allow (Permitir)"* caso seja necessário</br>
-
-``` 
-Considerando o seguinte database:
-dbacademy.<seu_database>.stock_bigtech
-
-Crie um novo dataset:
-Selecione o nome da empresa, stock,
-mínimo valor de fechamento, máximo valor de fechamento
-e percentual de variação entre o mínimo e o máximo valor de fechamento
-da tabela dbacademy.<seu_nome>.stock_bigtech
-agrupando por empresa e stock.
-Use a coluna company para achar o nome da empresa
-```
-Aguarde a execução terminar 
-</br>
-</br>
-<img src="../../imagens/lab01_img09.png" width="700px">
-</br></br></br>
+## Exercício 04 - Criando um NOVO contexto de dados
 
 Vá até *"Data (Dados)"*
-Selecione o novo dataset criado e acrescente ao resultado a linha de concatenação com o nome da ação (STOCK), </br>
-com o LINK (URL) de uma imagem. </br>
 
+1 - Escolha a opção *"Add SQL Dataset"*
+
+2 - Copie a consulta abaixo e cole no editor 
 ``` sql
 
 SELECT 
@@ -121,8 +99,10 @@ SELECT
   ((MAX(close) - MIN(close)) / MIN(close) * 100) AS percentual_variacao
 FROM dbacademy.workshop_aibi.stocks
 GROUP BY company, stock;
-
 ```
+
+3 - Nomeie a consulta como **"tendencias""**
+
 </br>
 Ao executar a query (botão RUN),</br>
 o resultado esperado é o mostrado abaixo:</br>
@@ -158,7 +138,7 @@ Salve (Publique) novamente o Painel.
 </br></br></br>
 
 
-
+[FIM]
 
 
 
